@@ -59,13 +59,13 @@ img {
 }
 /* ※ヘッダー */
 body {
-    background-image: url("images/background@2x.png");
     background-color: #1d1d1d;
 }
 
-.background_washi {
-    width: 1920px;
-    z-index: 1;
+.background {
+    background-image: url("images/background@2x.png");
+    height: 2719px;
+    z-index: 100;
 }
 .header_logo {
     width: 88px;
@@ -157,8 +157,10 @@ body {
 }
 /* ※can */
 .can {
-    background-image: url(images/CAN_background@2x.png);
-    z-index: 2;
+    /* background-color: antiquewhite; */
+    background-image: url(images/CAN_background@2x.png) !important;
+    height: 726px;
+    min-width: 100%;
 }
 .can_width {
     width: 57.29%;
