@@ -158,7 +158,7 @@ body {
 /* ※can */
 .can {
     background-image: url(images/CAN_background@2x.png);
-    z-index: 1;
+    z-index: 2;
 }
 .can_width {
     width: 57.29%;
