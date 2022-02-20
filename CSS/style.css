@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4.6% 0 2.51%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* ※ヘッダー */
+body {
+    background-image: url("images/background@2x.png");
+    background-color: #1d1d1d;
+}
+
+.background_washi {
+    width: 1920px;
+    z-index: 1;
+}
+.header_logo {
+    width: 88px;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+.pc_nav li {
+    width: 80px;
+    margin-left: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffff;
+}
+.hitokoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 33.5%;
+    margin: -10px;
+}
+
+/* ※メイン */
+.tree {
+    padding-top: 0px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+.who {
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    position: absolute;
+    top: 230px;
+    right: 100px;
+    color: #ffff;
+}
+.v_line {
+    margin-left: 100px;
+    width: 2px;
+    height: 118px;
+    position: absolute;
+    top: 330px;
+    right: 111px;
+    background-color: #ffff;
+}
+.name {
+    width: 620px;
+    position: absolute;
+    top: 630px;
+    right: 2%;
+}
+
+/* ※about */
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 57.29%;
+    margin: 0 auto;
+}
+.about_images {
+    width: 173px;
+    padding-bottom: 45px;
+}
+.about_profile {
+    display: flex;
+    justify-content: space-between;
+}
+.profile {
+    width: 560px;
+}
+.about_me {
+    font-size: 20px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #ffff;
+    padding-top: 45px;
+    line-height: 1.5em;
+}
+.about_myimages {
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 45px;
+}
+.line {
+    width: 243px;
+    border: 2px #ffff solid;
+    margin: 0;
+}
+/* ※can */
+.can {
+    background-image: url(images/CAN_background@2x.png);
+    z-index: 2;
+}
+.can_width {
+    width: 57.29%;
+    margin: 0 auto;
+}
+.can_images {
+    max-width: 104px;
+    padding-bottom: 45px;
+}
+
+.can_line {
+    width: 243px;
+    border: 2px #ffff solid;
+    margin: 0;
+}
