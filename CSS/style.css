@@ -16,7 +16,7 @@ dl {
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: #4f260b;
+    color: #ffff;
     font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
@@ -63,8 +63,7 @@ body {
 }
 
 .background {
-    background-image: url("images/background@2x.png");
-    height: 2719px;
+    background-image: url("../images/background@2x.png");
     z-index: 100;
 }
 .header_logo {
@@ -113,11 +112,14 @@ body {
     background-color: #ffff;
 }
 .name {
-    width: 620px;
-    position: absolute;
-    top: 630px;
-    right: 2%;
+    width: 37.5%;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 20px;
 }
+/* .name_area {
+    padding-right: 20px;
+} */
 
 /* ※about */
 .about {
@@ -141,7 +143,6 @@ body {
     font-size: 20px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    color: #ffff;
     padding-top: 45px;
     line-height: 1.5em;
 }
@@ -158,9 +159,8 @@ body {
 /* ※can */
 .can {
     /* background-color: antiquewhite; */
-    background-image: url(images/CAN_background@2x.png) !important;
-    height: 726px;
-    min-width: 100%;
+    background-image: url(../images/CAN_background@2x.png);
+    width: 100%;
 }
 .can_width {
     width: 57.29%;
@@ -169,9 +169,199 @@ body {
 .can_images {
     max-width: 104px;
     padding-bottom: 45px;
+    padding-top: 30px;
 }
 .can_line {
     width: 243px;
     border: 2px #ffff solid;
     margin: 0;
+}
+.can_text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    width: 114%;
+}
+.can_detail {
+    background-color: #1d1d1d;
+    margin-right: 3.3%;
+    width: 100%;
+}
+.can_detail:last-child {
+    margin-right: 0;
+}
+.can_detail_images {
+    width: 145px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+h3 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.can_detail_text {
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    width: 62.7%;
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.can_detail_images_codhing {
+    width: 190px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.can_detail_images_design {
+    width: 200px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+/* work */
+.work_width {
+    width: 57.29%;
+    margin: 0 auto;
+}
+.work_images {
+    width: 16.1%;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.work_detail {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.work_images_work {
+    width: 45.3%;
+}
+
+.work_text {
+    width: 30%;
+    margin: 0 auto;
+}
+.soft_name {
+    background-color: #333333;
+    border-radius: 12px;
+    width: 41.3%;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.soft {
+    color: #cce355;
+    font-size: 20px;
+    margin: 0 auto;
+    /* padding-top: px; */
+    text-align: center;
+}
+.illustrator_detail {
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    margin-top: -17px;
+}
+
+.perusona,
+.illustrator_text {
+    width: 50%;
+}
+.perusona {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.v_line_fix {
+    width: 0.75px;
+    height: 30px;
+    background-color: #ffff;
+}
+.illustrator_text {
+    font-size: 12px;
+    padding: 15px;
+}
+/* .illustrator_detail {
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+/* ※footer */
+footer {
+    width: 100%;
+    /* background-color: #ffff !important; */
+    background-color: -moz-linear-gradient(
+        top-left,
+        #000000,
+        #a4a4a4 30%,
+        #000000
+    ) !important;
+}
+.contact_width {
+    width: 57.29%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.contact_images {
+    width: 22%;
+}
+
+.contact_about {
+    padding-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+.contact_ {
+    padding-right: 10px;
+}
+.contact_second {
+    width: 70%;
+    padding-right: 10px;
+}
+.contact_text {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.response {
+    display: flex;
+    align-items: center;
+}
+.contact_time {
+    padding-top: 20px;
+    text-align: left;
+}
+.response_time {
+    display: flex;
+    align-items: center;
+}
+.response_time:after {
+    border-top: 1px solid;
+    content: "";
+    width: 3em;
+}
+.response_time:after {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.my_name {
+    padding-top: 60px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+.time,
+.response_time {
+    font-size: 17px;
 }
