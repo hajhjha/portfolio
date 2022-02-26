@@ -27,20 +27,37 @@
             <nav class="pc_nav">
         <ul>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#menu">CAN</a></li>
-            <li><a href="#to_gallery">WORK</a></li>
-            <li><a href="#event">CONTACT</a></li>
+            <li><a href="#can">CAN</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contactt">CONTACT</a></li>
         </ul>
             </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#can">CAN</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
         </div>
         <p class="hitokoto">
-            <img src="images/top_left@2x.png" alt="一言">
+            <picture>
+                <source srcset="images/top-left_mobile@2x.png" media="(max-width: 1024px)">
+                <img src="images/top_left@2x.png" alt="一言">
+                            </picture>
         </p>
     </header>
     <main>
         <div class="first">
         <p class="tree">
-            <img src="images/main_tree@2x.png" alt="木">
+            <picture>
+                <source srcset="images/mobile_treee@2x.png" media="(max-width: 1024px)">
+                <img src="images/main_tree@2x.png" alt="木">
+            </picture>
+            
         </p>
         <p class="who">
             Who am I
@@ -55,7 +72,7 @@
 </div>
 
     <!-- ※about -->
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="about_images">
             <img src="images/about@2x.png" alt="about">
         </h2>
@@ -71,12 +88,14 @@
         </ul>
     </section>
     <!-- ※can -->
-    <section class="can">
+    <section class="can" id="can">
         <div class="can_width">
         <h2 class="can_images">
             <img src="images/can@2x.png" alt="できること">
         </h2>
             <div class="can_line"></div>
+        </div>
+        <div class="can_width_detail">
             <ul class="can_text">
                 <li class="can_detail">
                     <p class="can_detail_images_codhing">
@@ -95,14 +114,14 @@
                         <img src="images/can_third@2x.png" alt="代行">
                     </p>
                     <h3>記帳代行</h3>
-                    <p class="can_detail_text">アドビのイラストレーターやフォトショップを用いてのデザインお任せください。WEBサイトだけでなく紙面や資料作成等もお任せください。</p>
+                    <p class="can_detail_text">めんどくさい日々の経理作業。日々の煩わしさ解消、並びに現状の予想最終着地点からの逆算した業務改善など行います。</p>
                 </li>
             </ul>
          </div>
         </section>
 
         <!-- ※work -->
-        <section class="work">
+        <section class="work" id="work">
             <div class="work_width">
             <h2 class="work_images">
                 <img src="images/work@2x.png" alt="作品">
@@ -150,7 +169,7 @@
      </main>
     </div>
     <!-- ※footer -->
-    <footer>
+    <footer id="contact">
         <div class="contact_width">
             <h2 class="contact_images">
                 <img src="images/contact@2x.png" alt="連絡先">
@@ -207,6 +226,26 @@
         </p>
         </div>
     </footer>
+
+        
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+
+            $('a[href^="#"]').click(function() {
+          let speed = 450;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+
+    </script>
 </body>
 
 </html>

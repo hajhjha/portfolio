@@ -111,6 +111,9 @@ body {
     right: 111px;
     background-color: #ffff;
 }
+.name_area {
+    margin-top: -160px;
+}
 .name {
     width: 37.5%;
     margin-right: 0;
@@ -137,7 +140,7 @@ body {
     justify-content: space-between;
 }
 .profile {
-    width: 560px;
+    width: 50%;
 }
 .about_me {
     font-size: 20px;
@@ -147,9 +150,8 @@ body {
     line-height: 1.5em;
 }
 .about_myimages {
-    width: 50%;
-    padding-left: 50px;
-    padding-top: 45px;
+    width: 490px;
+    padding-left: 40px;
 }
 .line {
     width: 243px;
@@ -176,13 +178,17 @@ body {
     border: 2px #ffff solid;
     margin: 0;
 }
+.can_width_detail {
+    padding-top: 65px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 64.9%;
+}
+
 .can_text {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 65px;
-    padding-bottom: 50px;
-    width: 114%;
+    text-align: center;
 }
 .can_detail {
     background-color: #1d1d1d;
@@ -290,6 +296,8 @@ h3 {
 .illustrator_text {
     font-size: 12px;
     padding: 15px;
+    line-height: 1.7;
+    padding-top: 20px;
 }
 /* .illustrator_detail {
     display: inline-block;
@@ -300,11 +308,11 @@ h3 {
 footer {
     width: 100%;
     /* background-color: #ffff !important; */
-    background-color: -moz-linear-gradient(
-        top-left,
-        #000000,
-        #a4a4a4 30%,
-        #000000
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.5),
+        rgba(128, 128, 128, 0.4) 50%,
+        rgba(0, 0, 0, 0.5)
     ) !important;
 }
 .contact_width {
@@ -356,7 +364,6 @@ footer {
     margin-left: 8px;
 }
 .my_name {
-    padding-top: 60px;
     padding-bottom: 25px;
     font-size: 50px;
     text-align: center;
@@ -364,4 +371,97 @@ footer {
 .time,
 .response_time {
     font-size: 17px;
+}
+
+.sp_nav {
+    display: none;
+}
+.sp_btn {
+    display: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 1024px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background-color: #ffff;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background-color: white;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(000, 000, 000, 0.8);
+        width: 100%;
+    }
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp_nav li {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 100px;
+        color: #ffff;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+}
+
+/* ※メインビジュアル */
+.tree {
+    margin: 0 auto;
+    width: 100%;
 }
