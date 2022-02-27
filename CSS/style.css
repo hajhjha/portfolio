@@ -380,6 +380,20 @@ footer {
     display: none;
 }
 
+.img[src$="images/mobile_treee@2x.png"] {
+    width: 100%;
+}
+.profile_mobile {
+    display: none;
+}
+.work_mobile_detail {
+    display: none;
+}
+
+.contact_width_mobile {
+    display: none;
+}
+
 /* レスポンシブ */
 @media screen and (max-width: 1024px) {
     .pc_nav {
@@ -458,10 +472,189 @@ footer {
             "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
             "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     }
-}
 
-/* ※メインビジュアル */
-.tree {
-    margin: 0 auto;
-    width: 100%;
+    /* ※メインビジュアル */
+    .who {
+        top: 90px;
+        right: 18px;
+    }
+    .v_line {
+        width: 1px;
+        height: 50px;
+        top: 205px;
+        right: 29px;
+    }
+    /* ※about */
+    .about {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        width: 61.8%;
+        margin: 0 auto;
+    }
+    .about_images {
+        width: 70px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .about_profile {
+        display: block;
+    }
+    .profile {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .about_me {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .about_myimages {
+        display: none;
+    }
+    .line {
+        margin: 0 auto;
+        width: 50px;
+        border: 1px #ffff solid;
+    }
+    .profile_mobile {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    /* ※can */
+    .can_width {
+        width: 65.06%;
+        margin: 0 auto;
+    }
+    .can_images {
+        width: 70px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .can_line {
+        margin: 0 auto;
+        width: 50px;
+        border: 1px #ffff solid;
+    }
+    .can_width_detail {
+        width: 65%;
+    }
+
+    .can_text {
+        display: block;
+    }
+    .can_detail {
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .can_detail_images {
+        width: 33.1%px;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    h3 {
+        padding-top: 20px;
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+    .can_detail_text {
+        font-size: 12px;
+        padding-bottom: 20px;
+        width: 69.2%;
+    }
+    .can_detail_images_codhing {
+        width: 33.1%;
+        padding-top: 15px;
+        margin: 0 auto;
+    }
+    .can_detail_images_design {
+        width: 33.1%;
+        padding-top: 15px;
+        margin: 0 auto;
+    }
+    /* ※work */
+    .work_width {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .work_images {
+        width: 70px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .work_images_work {
+        margin: 0 auto 0 0;
+    }
+
+    .work_text {
+        width: 50%;
+        margin: 0 0 0 auto;
+    }
+    .soft_name {
+        background-color: #333333;
+        border-radius: 12px;
+        width: 41.3%;
+        height: 35px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    .soft {
+        font-size: 20px;
+        /* padding-top: px; */
+    }
+    .illustrator_detail {
+        display: flex;
+        align-items: center;
+        margin-top: -17px;
+    }
+
+    .perusona,
+    .illustrator_text {
+        width: 50%;
+    }
+    .perusona {
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .v_line_fix {
+        width: 0.75px;
+        height: 30px;
+        background-color: #ffff;
+    }
+    .illustrator_text {
+        font-size: 12px;
+        padding: 15px;
+        line-height: 1.7;
+        padding-top: 20px;
+    }
+    .work_detail {
+        display: none;
+    }
+    .work_mobile_detail {
+        display: block;
+    }
+    .work_mobile {
+        display: flex;
+        align-items: center;
+    }
+    .illustrator_detail,
+    .photshop {
+        display: flex;
+    }
+    /* ※コンタクト */
+    .contact_images {
+        width: 70px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .contact_width {
+        display: none;
+    }
+    .contact_width_mobile {
+        display: block;
+    }
 }
