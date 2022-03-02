@@ -111,9 +111,6 @@ body {
     right: 111px;
     background-color: #ffff;
 }
-.name_area {
-    margin-top: -160px;
-}
 .name {
     width: 37.5%;
     margin-right: 0;
@@ -358,8 +355,6 @@ footer {
     border-top: 1px solid;
     content: "";
     width: 3em;
-}
-.response_time:after {
     margin-right: 8px;
     margin-left: 8px;
 }
@@ -474,15 +469,22 @@ footer {
     }
 
     /* ※メインビジュアル */
+    .header_logo {
+        width: 4.5%;
+    }
     .who {
-        top: 90px;
-        right: 18px;
+        top: 10%;
+        right: 3.5%;
+        font-size: 3.2%;
     }
     .v_line {
-        width: 1px;
-        height: 50px;
-        top: 205px;
-        right: 29px;
+        width: 0.265%;
+        height: 5%;
+        top: 13%;
+        right: 4.5%;
+    }
+    .name {
+        width: 50.4%;
     }
     /* ※about */
     .about {
@@ -550,7 +552,7 @@ footer {
         margin-bottom: 20px;
     }
     .can_detail_images {
-        width: 33.1%px;
+        width: 33.1%;
         margin: 0 auto;
         padding-top: 15px;
     }
@@ -650,11 +652,50 @@ footer {
         width: 70px;
         padding-bottom: 5px;
         margin: 0 auto;
+        padding-top: 10px;
     }
     .contact_width {
         display: none;
     }
+    .contact_main {
+        text-align: center;
+    }
     .contact_width_mobile {
         display: block;
+    }
+    .contact_text {
+        font-size: 12px;
+    }
+    .mobile {
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 20px;
+        width: 66.9%;
+    }
+    .mobile_contact_text {
+        padding-top: 10px;
+    }
+    span {
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+    .response_time {
+        display: inline;
+    }
+    .time,
+    .response_time,
+    .response_time_mobile {
+        font-size: 12px;
+    }
+    .my_name {
+        padding-top: 30px;
+        font-size: 0.04%;
+    }
+    .response_time:after {
+        border-top: 1px solid;
+        content: "";
+        width: 3em;
+        margin-right: 8px;
+        margin-left: 8px;
     }
 }
