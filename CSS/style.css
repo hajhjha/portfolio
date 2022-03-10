@@ -336,10 +336,20 @@ footer {
     width: 70%;
     padding-right: 10px;
 }
-.contact_text {
+.contact_text,
+.contact_text_mail {
     padding-top: 20px;
     font-size: 20px;
 }
+
+.contact_text_mail a {
+    border-bottom: 1px solid #ffff;
+}
+
+.contact_text_mail a :hover {
+    color: aqua;
+}
+
 .response {
     display: flex;
     align-items: center;
@@ -461,8 +471,8 @@ footer {
     .sp_nav li {
         text-align: center;
         font-weight: bold;
-        font-size: 50px;
-        padding: 100px;
+        font-size: 20px;
+        padding: 50px;
         color: #ffff;
         font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
             "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
@@ -490,7 +500,7 @@ footer {
     /* ※about */
     .about {
         padding-top: 60px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
         width: 61.8%;
         margin: 0 auto;
     }

@@ -88,7 +88,8 @@
                 <span class="about_me">※ちなみにウィンタースポーツはスキー派ですw。</span>
             </li>
             <li class="about_myimages">
-                <img src="images/about pc@2x.png" alt="profile">
+                <p>
+                <img src="images/about pc@2x.png" alt="自己紹介"></p>
             </li>
         </ul>
     </section>
@@ -230,7 +231,7 @@
         </li>
         <li class="contact_second">
             <p class="contact_main">お問い合わせはコチラ</p>
-            <p class="contact_text">MAIL:mnimmk.k@gmail.com 刈田 浩次郎</p>
+            <p class="contact_text_mail"><a href="mailto:mnimmk.k@gmail.com">MAIL:mnimmk.k@gmail.com 刈田 浩次郎</a></p>
             <p class="contact_text">※返信に要する時間</p>
             <ul class="response">
                 <li class="contact_time">
@@ -281,7 +282,7 @@
         <div class="can_line"></div>
             <div class="mobile">
         <p class="contact_main">お問い合わせはコチラ</p>
-        <p class="contact_text">MAIL:mnimmk.k@gmail.com 刈田 浩次郎</p>
+        <p class="contact_text_mail"><a href="mailto:mnimmk.k@gmail.com">MAIL:mnimmk.k@gmail.com 刈田 浩次郎</a></p>
         <p class=contact_text>
                 LINE:0768559716
             </p>
@@ -326,6 +327,17 @@
           return false;
         });
       });
+       //   メニュー閉じる
+//        $(function() {
+//     $('sp_nav li a').on('click', function(event) {
+//     $('sp_nav').prop('checked', false);
+//   });
+// });
+$(function() {
+    $('#sp_nav a').on('click', function(event) {
+        $('.header_wrap').trigger('click');
+});
+});
 
     </script>
 </body>
