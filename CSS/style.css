@@ -698,6 +698,8 @@ footer {
     .response_time {
         display: inline;
     }
+    .contact_text_mail,
+    .contact_text,
     .time,
     .response_time,
     .response_time_mobile {
