@@ -687,6 +687,9 @@ footer {
     .mobile_contact_text {
         padding-top: 10px;
     }
+    .work_mobile_detail {
+        padding-top: 65px;
+    }
     span {
         margin: 0 auto;
         vertical-align: middle;
