@@ -649,6 +649,7 @@ footer {
     }
     .work_mobile_detail {
         display: block;
+        padding-top: 65px;
     }
     .work_mobile {
         display: flex;
