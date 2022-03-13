@@ -513,7 +513,7 @@ footer {
         display: block;
     }
     .profile {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
     .about_me {
@@ -530,7 +530,7 @@ footer {
     }
     .profile_mobile {
         display: block;
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
         padding-top: 20px;
     }
@@ -615,7 +615,7 @@ footer {
         align-items: center;
     }
     .soft {
-        font-size: 20px;
+        font-size: 15px;
         /* padding-top: px; */
     }
     .illustrator_detail {
